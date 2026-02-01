@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Script</title>
+<style>
+  /* Reset & Body */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #e0f7ff, #ffffff);
+  }
+
+  /* Glass Container */
+  .glass {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to right, #a0dfff, #3b82f6);
+    padding: 60px 100px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+  }
+
+  /* Animated Gradient Button */
+  .gradient-button {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: linear-gradient(270deg, #8e2de2, #4a00e0, #3b82f6, #a0dfff);
+    background-size: 800% 800%;
+    animation: gradient 8s ease infinite;
+    transition: transform 0.2s ease;
+  }
+
+  .gradient-button:hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+</style>
+</head>
+<body>
+  <div class="glass">
+    <h1>Get Script</h1>
+    <button class="gradient-button" onclick="window.location.href='https://discord.gg/CSQxuAYy6x'">Click Me</button>
+  </div>
+</body>
+</html>
