@@ -13,25 +13,25 @@
     align-items: center;
     height: 100vh;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #e0f7ff, #ffffff);
+    background: linear-gradient(135deg, #0f172a, #1e293b); /* Dark blue → dark grey */
   }
 
-  /* Glass Container */
+  /* Dark Glass Container */
   .glass {
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: rgba(30, 30, 30, 0.6); /* Dark grey glass */
+    border-radius: 25px; /* Rounded edges */
     border: 2px solid;
     border-image-slice: 1;
     border-width: 2px;
-    border-image-source: linear-gradient(to right, #a0dfff, #3b82f6);
+    border-image-source: linear-gradient(to right, #3b82f6, #a0dfff); /* Light blue outline */
     padding: 60px 100px;
     text-align: center;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
   }
 
   h1 {
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 40px;
     font-size: 2.5rem;
   }
